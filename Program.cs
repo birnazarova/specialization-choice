@@ -1,4 +1,4 @@
-﻿string[] stringArray = new string[]{"hello", "2", "world", ":-)"};
+﻿string[] stringArray = new string[]{"Kyrgyzstan", "Denmark", "Netherlands", ":-)"};
 
 var resultArray = Array.Empty<string>();
 int i = 0;
@@ -7,8 +7,7 @@ while (i < stringArray.Length)
 {
     if (stringArray[i].Length <= 3)
     {
-        string element = stringArray[i];
-        resultArray = resultArray.Append(element).ToArray();
+        resultArray = resultArray.Append(stringArray[i]).ToArray();
     }
     i++;
 }
